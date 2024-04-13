@@ -1,5 +1,6 @@
 package collection;
 
+import java.util.Iterator;
 import java.util.LinkedList;
 
 public class linkedList {
@@ -50,9 +51,34 @@ public class linkedList {
 		System.out.println("list is empty or not");
 		System.out.println(list3.isEmpty());
 		System.out.println( list.listIterator());
+		System.out.println("=======================================================================================================");
+		
+		Iterator<String> listIterator = list.iterator();
+		
+		while(listIterator.hasNext())
+		{
+			String i=listIterator.next();
+			System.out.println(i+"  ");
+			
+		}
+		
+		
+		//=");
+		//while(listIterator.hasNext())
+		//{
+		
+		//boolean m=listIterator.hasNext();
+		//System.out.println(m+"   ");
+		}
+		
+		//listIterator.hasNext();
+		//listIterator.next();
 		
 		
 		
-	}
+		
+	
+
+
 
 }

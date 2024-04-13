@@ -2,6 +2,8 @@ package collection;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Iterator;
+import java.util.ListIterator;
 
 public class arraylist {
 
@@ -88,7 +90,35 @@ public class arraylist {
 		    System.out.println("sort using arraylist");
 		    Collections.sort(test1);
 		    System.out.println(test1);
+		    
+		    
+		    System.out.println("=====================using iterator==========");
+		    Iterator<Integer> it = myNumbers.iterator();
+		    while(it.hasNext())
+			{
+				Integer i=it.next();
+				System.out.println(i+"  ");
+				
+			}
+		    
+		    
+		    ListIterator<String> it1 = test1.listIterator();
+		    
+		    // Condition check whether there is element in List
+	        // using hasNext() which holds true till
+	        // there is single element in List
+		    while(it1.hasNext()) {
+		    	System.out.println(it1.next());
+		    }
+		    
+		    System.out.println("=======================================");
+		    System.out.println(" ===============using list iterator toretrive previous element=============");
+		    while(it1.hasPrevious())
+		    {
+		    	System.out.println(it1.previous());
+		    
 	} 
+}
 }
 		    
 		    
